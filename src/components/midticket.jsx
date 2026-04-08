@@ -26,7 +26,7 @@ export default function Midticket({value}){
         setrply(value)
     }
     return(
-        <div className="relative z-10  min-h-[766px] flex-1 flex flex-col items-center bg-white">
+        <div className="relative z-10  min-h-[846px] flex-1 flex flex-col items-center bg-white">
             <div className="w-full items-center min-h-[71px] max-h-[71px] shadow-[0_2px_2px_-1px_rgba(0,0,0,0.1)]">
                 <div className="relative flex-1 flex flex-col items-start px-2 mb-1 space-y-1 2xl:px-4 2xl:py-2">
                     <h3 className="font-semibold text-medium text-primary 2xl:text-s2xl">Laudantium neque veritatis</h3>
@@ -57,7 +57,7 @@ export default function Midticket({value}){
                         </div>
                 </div>
             </div>
-            <div className="w-[96%] flex flex-col items-center bg-white mt-4 rounded-lg border border-[#D9D9D9]border border-[2px] shadow-[0_5px_5px_rgba(0,0,0,0.1)]">
+            <div className="w-[96%] flex flex-col items-center bg-white mt-4 rounded-lg border border-[#D9D9D9] border border-[2px] shadow-[0_5px_5px_rgba(0,0,0,0.1)]">
                 <div className="w-full min-h-[53px] flex items-center px-3 rounded-t-lg">
                     <span className="h-[53px] flex flex-col items-center">
                         <span className={`font-semibold text-base mt-[10px] ${reply===0?"text-primary":"text-gray"}`} onClick={(e)=>{e.stopPropagation();handlereply(0)}}>Public Reply</span>
