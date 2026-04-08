@@ -157,7 +157,7 @@ const settickets=Ticketss(s=>s.settickets)
             <input className="min-w-[100%] h-[53px] pl-10 pb-1 rounded-md placeholder:text-base placeholder:" placeholder="Search Capacity..."/>
             <Search size={23} color="gray" className="absolute top-[27.3%] left-[2.7%]"/>
             </div>
-            <button className="ml-[22.1%] h-[41px] flex items-center bg-white text-[#0B2E5B] bg-blue-300 px-4 rounded-md font-medium" onClick={(e)=>{e.stopPropagation();handlewidth()}}>
+            <button className="ml-[22.1%] h-[41px] flex items-center text-[#0B2E5B] bg-blue-300 px-4 rounded-md font-medium" onClick={(e)=>{e.stopPropagation();handlewidth()}}>
                 <span className="mr-1 text-sm">Create</span>
                 
   <span className="mx-2 h-full w-px bg-gray-300"></span>
