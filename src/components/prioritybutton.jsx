@@ -8,7 +8,7 @@ export default function PriorityButton(){
         setvlue(!value)
     }
     return(
-        <button className="relative z-[1001] h-[34px] flex items-center bg-[#3C9DDE] text-[#0B2E5B] px-2 py-1 rounded-md font-medium 2xl:h-[37px]" onClick={(e)=>{e.stopPropagation();handleclick()}}>
+        <button className="relative z-[1001] h-[34px] flex items-center bg-[#3E9BF0] text-[#0B2E5B] px-2 py-1 rounded-md font-medium 2xl:h-[37px]" onClick={(e)=>{e.stopPropagation();handleclick()}}>
         <span className="mr-1 text-sm text-white 2xl:text-base">To Do</span>
         <span className="mx-2 h-full w-px bg-gray-300"></span>
         <ChevronDown size={17} className="mt-1 text-white" />

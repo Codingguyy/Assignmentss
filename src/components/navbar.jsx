@@ -157,11 +157,11 @@ const settickets=Ticketss(s=>s.settickets)
             <input className="min-w-[100%] h-[53px] pl-10 pb-1 rounded-md placeholder:text-base placeholder:" placeholder="Search Capacity..."/>
             <Search size={23} color="gray" className="absolute top-[27.3%] left-[2.7%]"/>
             </div>
-            <button className="ml-[22.1%] h-[41px] flex items-center text-[#0B2E5B] bg-[#3E9BF0] px-4 rounded-md font-medium" onClick={(e)=>{e.stopPropagation();handlewidth()}}>
+            <button className="ml-[22.1%] h-[41px] flex items-center text-white bg-[#3E9BF0] px-4 rounded-md font-medium" onClick={(e)=>{e.stopPropagation();handlewidth()}}>
                 <span className="mr-1 text-sm">Create</span>
                 
-  <span className="mx-2 h-full w-px bg-gray-300"></span>
-  <ChevronDown size={17} className="ml-1 mt-1"/>
+  <span className="mx-2 h-full w-px bg-white"></span>
+  <ChevronDown size={17} className="ml-1 mt-1" color="white"/>
 </button>
     <div className="flex items-center space-x-4 ml-[1.7%]">
        <HelpCircle size={26} color="#5E94F7"/>
