@@ -57,7 +57,7 @@ export default function Leftticket({value,functionn,hide,sethide}){
         setticketindi(data)
     }
     return(
-        <>{hide?<div className="min-w-[57px] min-h-screen flex flex-col items-center justify-start py-4">
+        <>{hide?<div className="min-w-[57px] h-full flex-1 flex flex-col items-center justify-start py-4">
             <ChevronsRight size={31} color="black" onClick={(e)=>{e.stopPropagation();handlehide()}}/>
             </div>:<div className={`relative z-20 min-w-[22.3%] flex flex-col items-center h-screen min-h-screen rounded-l-[23px] shadow-md 2xl:min-w-[21.3%] bg-white`}>
             <div className="h-[71px] w-[100%] flex items-center px-5 rounded-tl-[23px] shadow-[0_2px_2px_-1px_rgba(0,0,0,0.1)]">
