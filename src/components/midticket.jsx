@@ -26,7 +26,7 @@ export default function Midticket({value}){
         setrply(value)
     }
     return(
-        <div className="relative z-10  min-h-[846px] flex-1 flex flex-col items-center bg-white">
+        <div className="relative z-10  min-h-screen flex-1 flex flex-col items-center bg-white">
             <div className="w-full items-center min-h-[71px] max-h-[71px] shadow-[0_2px_2px_-1px_rgba(0,0,0,0.1)]">
                 <div className="relative flex-1 flex flex-col items-start px-2 mb-1 space-y-1 2xl:px-4 2xl:py-2">
                     <h3 className="font-semibold text-medium text-primary 2xl:text-s2xl">Laudantium neque veritatis</h3>
