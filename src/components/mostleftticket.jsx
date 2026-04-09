@@ -10,7 +10,7 @@ export default function Mostleftticket({value}){
         setvlue(value)
     }
     return(
-        <>{value?<div className="min-w-[18%] min-h-screen flex flex-col items-center py-5 bg-[#D6D6D6] rounded-l-[23px]">
+        <>{value?<div className="min-w-[18%] min-h-screen flex flex-col items-center py-5 bg-[#F0F0F0] rounded-l-[23px]">
             <div className="py-2 px-2 w-[93%] space-x-2  flex items-center justify-start rounded-lg bg-[#DBDBDB]">
                 <ChevronDown size={17} color="black"/>
                 <div className="font-semibold text-sm text-secondary">Ticket views</div>
