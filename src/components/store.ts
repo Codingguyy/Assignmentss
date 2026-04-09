@@ -31,6 +31,10 @@ export type ticketindi={
     ticket:tickets,
     setticket:(value:tickets)=>void
 }
+export type value={
+    valuee:string,
+    setvlue:(value:string)=>void
+}
 export const Ticketss=create<ticketlist>((set)=>({
     ticket:[],
     settickets:(value)=>set((v)=>({ticket:[...v.ticket,...value]})),
@@ -39,4 +43,8 @@ export const Ticketss=create<ticketlist>((set)=>({
 export const Ticketindi=create<ticketindi>((set)=>({
     ticket:{id:0,title:"",description:"",status:"",priority:"",type:"",messagesCount:0,attachmentsCount:0,assignees:[{id:0,avatar:"",name:""}],createdAt:new Date,createdBy:{name:"",email:"",avatar:""}},
     setticket:(value)=>set((v)=>({ticket:value}))
+}))
+export const Textareavalue=create<value>((set)=>({
+    valuee:"",
+    setvlue:(value)=>set(({valuee:value}))
 }))

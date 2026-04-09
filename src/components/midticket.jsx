@@ -14,6 +14,8 @@ import { Link } from "lucide-react"
 import { Smile } from "lucide-react"
 import { Send } from "lucide-react"
 import { Ticketindi } from "./store"
+import { Textareavalue } from "./store"
+import toast from 'react-hot-toast'
 import { FileSlidersIcon } from "lucide-react"
 import Middleticketview from "./middleticketview"
 import Middleticketoneview from './middleticketoneview'
@@ -22,8 +24,17 @@ export default function Midticket({value}){
     const [reply,setrply]=useState(0)
     const array=[{icon:Bold},{icon:Italic},{icon:Underline,size:23},{icon:List,size:23},{icon:Paperclip,size:28},{icon:Imageicon,size:28},{icon:Link,size:28},{icon:FileSlidersIcon,size:28}]
     const ticketindi=Ticketindi(s=>s.ticket)
+    const textareavalue=Textareavalue(s=>s.valuee)
+    const settextareavalue=Textareavalue(s=>s.setvlue)
     function handlereply(value){
         setrply(value)
+    }
+    function handletextareavalue(value){
+        settextareavalue(value)
+    }
+    function handlesend(){
+        settextareavalue("")
+        toast.success(`Message send successfully to ${ticketindi.createdBy.name} on this ${ticketindi.createdBy.email} email`)
     }
     return(
         <div className="relative z-10  min-h-screen flex-1 flex flex-col items-center bg-white">
@@ -76,7 +87,7 @@ export default function Midticket({value}){
                         <X size={13} color="black"/>
                     </span>
                 </div>
-                <textarea className="min-h-[173px] w-full px-6 py-6 bg-white placeholder:text-base" placeholder="Add a reply..."></textarea>
+                <textarea value={textareavalue} className="min-h-[173px] w-full px-6 py-6 bg-white placeholder:text-base" placeholder="Add a reply..." onChange={(e)=>{e.stopPropagation();handletextareavalue(e.target.value)}}></textarea>
                 <div className="w-full min-h-[57px] flex items-center justify-start rounded-b-lg border-t border">
                     <span className="h-full flex items-center justify-start">{array.map(data=><div className="h-full w-[53px] flex items-center justify-center"><data.icon size={data.size?data.size:19} color="gray"/></div>)}</span>
                     <span className="h-full flex items-center justify-start space-x-3 mr-5 ml-auto">
@@ -84,7 +95,7 @@ export default function Midticket({value}){
                         <span className="h-[26px] w-[26px] rounded-md border border-[3px] border border-gray"></span>
                     </span>
                     <span className="h-[37px] w-[37px] flex items-center justify-center rounded-md mr-3 shadow-md bg-[#D9D9D9] hover:bg-blue-400">
-                        <Send size={28} color="white"/>
+                        <Send size={28} color="white" onClick={(e)=>{e.stopPropagation();handlesend()}}/>
                     </span>
                 </div>
             </div>
