@@ -34,7 +34,11 @@ export default function Midticket({value}){
     }
     function handlesend(){
         settextareavalue("")
-        toast.success(`Message send successfully to ${ticketindi.createdBy.name} on this ${ticketindi.createdBy.email} email`)
+        toast.success(`Message send successfully to ${ticketindi.createdBy.name} on this ${ticketindi.createdBy.email} email`,{
+    duration: 3000,
+    position: "top-right",
+    icon: "📩",
+  })
     }
     return(
         <div className="relative z-10  min-h-screen flex-1 flex flex-col items-center bg-white">
